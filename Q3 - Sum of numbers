@@ -1,0 +1,11 @@
+def sum_of_digits(number):
+    return sum(int(digit) for digit in str(number))
+
+def calculate_sum_dict(numbers):
+    return {num: sum_of_digits(num) for num in numbers}
+
+input_numbers = [12, 32, 65, 45, 78, 98]
+
+result = calculate_sum_dict(input_numbers)
+
+print(result)
